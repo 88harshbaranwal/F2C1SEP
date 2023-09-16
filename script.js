@@ -2,18 +2,35 @@ const data = [
   { name: "john", age: 24, profession: "developer" },
   { name: "jane", age: 27, profession: "admin" },
 ];
-
 // 1. Print Developers
-function printDeveloper() {}
+function printDeveloper(data) {
+  const developer=data
+  .filter(person => person.profession=== "developer")
+  .map(developer => developer.name);
+  consol.log(developers.join(','));
+}
 
 // 2. Add Data
-function addData() {}
+function addData(newData) {
+  data.push(newData);
+  const newData = {name: "harsh", age: 24, profession: "developer"};
+  addData(newData);
+  consol.log(data);
+}
 
 // 3. Remove Admins
-function removeAdmin() {}
+function removeAdmin() {
+  data = data.filter(person => person.profession !== "admin");
+  data = removeAdmin(data);
+  consol.log(data);
+}
 
 // 4. Concatenate Array
-function concatenateArray() {}
+function concatenateArray(data) {
+  return [data,data];
+}
+  const concatenateArray = concatenateArray(data,data);
+  consol.log(data);
 
 // 5. Average Age
 function averageAge() {}
